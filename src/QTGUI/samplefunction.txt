@@ -1,0 +1,155 @@
+
+/*
+void RIHVR::computeHolographicReconstruction()
+{
+    // Choose where to save the param file (temporary for now)
+    //QString paramFilePath = QDir::tempPath() + "/reconstruction_gui.param";
+
+    // Gather GUI inputs
+    int numImages      = 1;
+    QString inputPath  = ui->HoloImgPath->text();
+    QString inputFormat= ui->HoloImgFileFormat->text();
+    QString outputPath = ui->OutputDir->text();
+    double startZ      = ui->z0->text().toDouble();;
+    double stepZ       = ui->dz->text().toDouble();
+    int numPlanes      = ui->Nz->text().toInt();
+    double wavelength  = ui->lambda->text().toDouble();
+    double resolution  = ui->dx->text().toDouble();
+
+    bool useROICenter  = ui->CenterRadio->isChecked();
+    int roiX           = ui->x0->text().toInt();
+    int roiY           = ui->y0->text().toInt();
+    int roiSize        = ui->SquareSize->text().toInt();
+
+    bool useROIRect    = ui->RectRadio->isChecked();
+    int roiRectX       = ui->x0Rect->text().toInt();
+    int roiRectY       = ui->y0Rect->text().toInt();
+    int roiRectW       = ui->Lx->text().toInt();
+    int roiRectH       = ui->Ly->text().toInt();
+
+    int zeroPadding    = ui->ZeroPad->text().toInt();
+    int invIter        = ui->nFISTA->text().toInt();
+    double regTau      = ui->Sparsity->text().toDouble();
+    double regTV       = ui->TV->text().toDouble();
+    int tvIter         = ui->nTV->text().toInt();
+    bool useEnhancement = !ui->ReconNoBG->isChecked();
+
+    bool outputPlanes  = ui->PhaseEachPlaneCheck->isChecked();
+    bool outputEachStep= ui->SaveFISTACheck->isChecked();
+
+    // check background type
+    bool useNoBG     = ui->ReconNoBG->isChecked();
+    bool useMedianBG = ui->ReconMedianBG->isChecked();
+    bool useMovingBG = ui->ReconMovingBG->isChecked();
+
+    QString bgPath   = ui->HoloBGpath->text();
+    QString bgFile   = ui->BGName->text();
+    QString bgFilename;
+
+    if (!bgPath.isEmpty() && !bgFile.isEmpty()) {
+        QDir dir(bgPath);
+        bgFilename = dir.filePath(bgFile);  // automatically adds separator
+    } else {
+        bgFilename = "";  // leave empty if either part is missing
+    }
+
+    // Generate parameter file
+    QString outputDir = ui->OutputDir->text();
+    QDir dir(outputDir);
+    // Create a "params" subdirectory
+    if (!dir.exists("params")) {dir.mkdir("params");}
+    // Use the "params" subdirectory for parameter files
+    QDir paramDir(dir.filePath("params"));
+
+
+    int startImg = ui->HoloStartImage->text().toInt();
+    int endImage   = ui->HoloEndImg->text().toInt();
+    int increment  = ui->HololIncrement->text().toInt();
+
+    for (int n = startImg; n <= endImage; n += increment)
+    {
+        // Construct parameter file path
+        QString paramFilePath = paramDir.filePath(QString("reconstruction_%1.param").arg(n, 4, 10, QChar('0')));
+
+        // change the background name according to the image number (Moving)
+        if (useEnhancement && useMovingBG) {
+            QString bgPath    = ui->HoloBGpath->text();
+            QString bgPattern = ui->BGName->text(); // e.g., "background_%08d.png"
+            if (!bgPath.isEmpty() && !bgPattern.isEmpty()) {
+                QDir dir(bgPath);
+                // Match %0Nd or %d
+                QRegularExpression re("%0?(\\d*)d");
+                QRegularExpressionMatch match = re.match(bgPattern);
+
+                QString patternForArg = bgPattern;
+                int width = 0;
+
+                if (match.hasMatch()) {
+                    QString widthStr = match.captured(1);
+                    if (!widthStr.isEmpty())
+                        width = widthStr.toInt();   // e.g., "08" → 8
+                    patternForArg.replace(re, "%1");
+                }
+                // Expand n with width if specified
+                if (width > 0)
+                    bgFilename = dir.filePath(patternForArg.arg(n, width, 10, QChar('0')));
+                else
+                    bgFilename = dir.filePath(patternForArg.arg(n)); // no padding
+            }
+        }
+        int medianWindow = 5; // it can't be changed in the computation, but we have it here to compute the correct number of image
+        if (useEnhancement && useMedianBG) {
+            QString bgPath    = ui->HoloBGpath->text();
+            QString bgPattern = ui->BGName->text(); // e.g., "background_%04d.png"
+            int lastBGIndex   = endImage - medianWindow + 2; // index of last computed median background
+
+            if (!bgPath.isEmpty() && !bgPattern.isEmpty()) {
+                QDir dir(bgPath);
+
+                int bgIndex = n;
+                if (n > lastBGIndex)
+                    bgIndex = lastBGIndex;  // reuse last median background
+
+                // Expand bgPattern with zero-padding as before
+                QRegularExpression re("%0?(\\d*)d");
+                QRegularExpressionMatch match = re.match(bgPattern);
+
+                QString patternForArg = bgPattern;
+                int width = 0;
+                if (match.hasMatch()) {
+                    QString widthStr = match.captured(1);
+                    if (!widthStr.isEmpty())
+                        width = widthStr.toInt();
+                    patternForArg.replace(re, "%1");
+                }
+
+                if (width > 0)
+                    bgFilename = dir.filePath(patternForArg.arg(bgIndex, width, 10, QChar('0')));
+                else
+                    bgFilename = dir.filePath(patternForArg.arg(bgIndex));
+            }
+        }
+
+        bool ok = ReconstructionCompute::generateParameterFile(
+            paramFilePath,
+            1, n,
+            inputPath, inputFormat, outputPath,
+            startZ, stepZ, numPlanes,
+            wavelength, resolution,
+            useROICenter, roiX, roiY, roiSize,
+            useROIRect, roiRectX, roiRectY, roiRectW, roiRectH,
+            zeroPadding, invIter,
+            regTau, regTV, tvIter,
+            outputPlanes, outputEachStep,
+            useEnhancement, bgFilename
+            );
+
+        if (!ok)
+            qDebug() << "Failed to generate parameter file for image" << n;
+        else
+            qDebug() << "Generated param file for image" << n << "at" << paramFilePath;
+    }
+}
+*/
+
+

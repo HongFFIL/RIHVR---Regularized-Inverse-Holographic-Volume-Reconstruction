@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/Icons/MenuBar">
+        <file>Icons/aboutButton.svg</file>
+        <file>Icons/exitButton.svg</file>
+        <file>Icons/loadButton.svg</file>
+        <file>Icons/saveButton.svg</file>
+        <file>Icons/settingsButton.svg</file>
+        <file>Icons/stopButton.svg</file>
+        <file>Icons/stopButtonPressed.svg</file>
+        <file>Icons/clearButton.svg</file>
+        <file>Icons/clearButtonPressed.svg</file>
+        <file>Icons/logButton.svg</file>
+        <file>Icons/logButtonPressed.svg</file>
+        <file>Icons/licenseButton.svg</file>
+        <file>Icons/Splash_3.gif</file>
+        <file>Icons/RIHVR_Icon.ico</file>
+        <file>Icons/Logo.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
