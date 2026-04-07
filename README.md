@@ -19,7 +19,7 @@ Digital inline holography (DIH) was invented by Hungarian physicist Dennis Gabor
 # Installation Instructions
 Please find the installation instructions in [RIHVR Installation Instructions](RIHVR_InstallationInstructions.pdf) 
 
-# Datasets
+# Demonstration Datasets
 The following three test datasets are made available at https://doi.org/10.17605/OSF.IO/QWRDP
 1) Synthetically generated 3D-HIT to demonstrate 3D particle tracking velocimetry using DIH.
 <img width="4009" height="2053" alt="3DHIT_With3DTracks-1" src="https://github.com/user-attachments/assets/939242cd-0405-4d71-825e-7e449f4c16bd" />
@@ -30,7 +30,7 @@ The following three test datasets are made available at https://doi.org/10.17605
 3) Rotating rods to demonstrate the ability of the method to extract 3D orientation of the objects.
 <img width="2588" height="849" alt="TJunction_3DVol" src="https://github.com/user-attachments/assets/8d6f3aba-5714-4bf2-80fd-02ca04e37f83" />
 
-# Citations
+# Papers
 The code is CUDA-accelerated, and further details regarding it can be found in the following papers:
 
 Jassal, Gauresh Raj, Kevin Mallery, and Jiarong Hong. "A Regularized Inverse Holographic Volume Reconstruction (RIHVR) GUI Program for Digital Inline Holography (DIH)." Journal of Open Research Software (2026).
