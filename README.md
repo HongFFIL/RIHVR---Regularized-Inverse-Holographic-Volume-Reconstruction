@@ -3,12 +3,6 @@ This repository houses the (source) code for Regularized Inverse Holographic Vol
 
 For Windows and LINUX installers, along with installation instructions and test data, please see the OSF archive at: https://doi.org/10.17605/OSF.IO/QWRDP
 
-The code is CUDA-accelerated, and further details regarding it can be found in the following papers:
-
-Jassal, Gauresh Raj, Kevin Mallery, and Jiarong Hong. "A Regularized Inverse Holographic Volume Reconstruction (RIHVR) GUI Program for Digital Inline Holography (DIH)." Journal of Open Research Software (2026).
-
-Mallery, Kevin, and Jiarong Hong. "Regularized inverse holographic volume reconstruction for 3D particle tracking." Optics Express 27, no. 13 (2019): 18069-18084.
-
 The authors acknowledge the financial support from the National Science Foundation under Grant No. NSF-MCB-2438892.
 
 # Digital Inline Holography (DIH)
@@ -30,7 +24,18 @@ The following three test datasets are made available at https://doi.org/10.17605
 3) Rotating rods to demonstrate the ability of the method to extract 3D orientation of the objects.
 <img width="2588" height="849" alt="TJunction_3DVol" src="https://github.com/user-attachments/assets/8d6f3aba-5714-4bf2-80fd-02ca04e37f83" />
 
+# Citations
+The code is CUDA-accelerated, and further details regarding it can be found in the following papers:
 
-![Splash_3](https://github.com/user-attachments/assets/c57d2de7-4494-4630-9a9d-e60b832335b7)
+Jassal, Gauresh Raj, Kevin Mallery, and Jiarong Hong. "A Regularized Inverse Holographic Volume Reconstruction (RIHVR) GUI Program for Digital Inline Holography (DIH)." Journal of Open Research Software (2026).
+
+Mallery, Kevin, and Jiarong Hong. "Regularized inverse holographic volume reconstruction for 3D particle tracking." Optics Express 27, no. 13 (2019): 18069-18084.
+
+# License
+The code is made available under a GNU GPL v3 [RIHVR Installation Instructions](LICENSE) 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c57d2de7-4494-4630-9a9d-e60b832335b7" alt="Splash_3">
+</p>
 
 
