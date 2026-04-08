@@ -1,4 +1,4 @@
-# <img width="480" height="480" alt="Logo" src="https://github.com/user-attachments/assets/3e451510-6f5d-4315-9bbe-78de545df66e" /> Regularized Inverse Holographic Volume Reconstruction (RIHVR) for Digital Inline Holography (DIH)
+# <img width="20" height="20" alt="Logo" src="https://github.com/user-attachments/assets/3e451510-6f5d-4315-9bbe-78de545df66e" /> Regularized Inverse Holographic Volume Reconstruction (RIHVR) for Digital Inline Holography (DIH)
 This repository houses the (source) code for Regularized Inverse Holographic Volumetric Reconstruction developed at the University of Minnesota (Twin Cities) in Professor Jiarong Hong's lab by Kevin Mallery and Gauresh Raj Jassal. 
 
 For the latest Windows and LINUX installers, along with installation instructions and test data, please see the OSF archive at: [https://doi.org/10.17605/OSF.IO/QWRDP](https://doi.org/10.17605/OSF.IO/QWRDP)
