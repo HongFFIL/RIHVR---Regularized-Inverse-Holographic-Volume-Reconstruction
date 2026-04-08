@@ -1,13 +1,14 @@
-<table>
-  <tr>
-    <td>
+<table border="0" style="border: none; border-collapse: collapse;">
+  <tr style="border: none;">
+    <td style="border: none; vertical-align: middle;">
       <img src="https://github.com/user-attachments/assets/3e451510-6f5d-4315-9bbe-78de545df66e" width="400" height="400" alt="Logo">
     </td>
-    <td>
+    <td style="border: none; vertical-align: middle;">
       <h1>Regularized Inverse Holographic Volume Reconstruction (RIHVR) for Digital Inline Holography (DIH)</h1>
     </td>
   </tr>
 </table>
+
 
 This repository houses the (source) code for Regularized Inverse Holographic Volumetric Reconstruction developed at the University of Minnesota (Twin Cities) in Professor Jiarong Hong's lab by Kevin Mallery and Gauresh Raj Jassal. 
 
