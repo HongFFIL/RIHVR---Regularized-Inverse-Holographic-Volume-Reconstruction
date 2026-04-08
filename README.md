@@ -8,6 +8,7 @@ For the latest Windows and LINUX installers, along with installation instruction
 # Repositories and support
 1) OSF Repository (live): [https://doi.org/10.17605/OSF.IO/QWRDP](https://doi.org/10.17605/OSF.IO/QWRDP)
 2) Zenodo Repository (archival): [https://doi.org/10.5281/zenodo.18991876](https://doi.org/10.5281/zenodo.18991876)
+3) GDrive Link to the Windows and Linux Installers: [https://drive.google.com/drive/folders/10D8jRnw60d7ROdpT2Rng85EAuzL-88dK?usp=sharing](https://drive.google.com/drive/folders/10D8jRnw60d7ROdpT2Rng85EAuzL-88dK?usp=sharing)
 
 Support is available at: [https://groups.google.com/g/RIHVR](https://groups.google.com/g/RIHVR)
 
