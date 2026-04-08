@@ -19,6 +19,29 @@ Digital inline holography (DIH) was invented by Hungarian physicist Dennis Gabor
 # Installation Instructions
 Please find the installation instructions in [RIHVR Installation Instructions](RIHVR_InstallationInstructions.pdf) 
 
+# Quick Start Guide
+1) Download the Windows Installer from [GDrive - Windows Installer](https://drive.google.com/file/d/14RncCqclnwr_e4DRJBF1Em8ZHwzjZyd9/view?usp=sharing), or the LinuxAppImage from [GDrive - Linux AppImage](https://drive.google.com/file/d/1a8kE3prEmbwEUNIzEmW3pWndnKVZ04V8/view?usp=sharing)
+2) Download the _Dandelions_ test case from [GDrive - Dandelion Data](https://drive.google.com/drive/folders/1OSCuNtha1z6xMWWJ4iuyWMh6UmukKK72?usp=sharing) or the _Rotating Rods_ from [GDrive - Rotating Rods](https://drive.google.com/drive/folders/1AGj9QrqHq4RU1cM-mm7gX3QU6MuZb0bb?usp=sharing).
+3) Use the following parameters to run the test cases.
+
+DANDELION
+<div align="center">
+
+| Parameter | Value |
+| :--- | :--- |
+| `z0` | 0 µm |
+| `dz` | 8000 µm |
+| `dx` | 10.4 µm |
+| `Nz` | 10 |
+| `lambda` | 0.633 µm |
+| `0-pad` | 64 |
+| `Sparsity` | 0.001 |
+| `TV` | 0.1 |
+| `Number of FISTA Iterations` | 100 |
+| `Number of TV Iterations` | 5 |
+</div>
+
+
 # Demonstration Datasets
 The following three test datasets are made available at https://doi.org/10.17605/OSF.IO/QWRDP
 1) Synthetically generated 3D-HIT to demonstrate 3D particle tracking velocimetry using DIH.
