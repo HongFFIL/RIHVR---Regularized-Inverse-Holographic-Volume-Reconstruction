@@ -15,14 +15,14 @@ For the latest Windows and LINUX installers, along with installation instruction
 
 **The authors acknowledge the financial support from the National Science Foundation under Grant No. NSF-MCB-2438892.**
 
-# Repositories and support
+# Repositories and Support
 1) OSF Repository (live): [https://doi.org/10.17605/OSF.IO/QWRDP](https://doi.org/10.17605/OSF.IO/QWRDP)
 2) Zenodo Repository (archival): [https://doi.org/10.5281/zenodo.18991876](https://doi.org/10.5281/zenodo.18991876)
 3) GDrive Link to the Windows and Linux Installers: [https://drive.google.com/drive/folders/10D8jRnw60d7ROdpT2Rng85EAuzL-88dK?usp=sharing](https://drive.google.com/drive/folders/10D8jRnw60d7ROdpT2Rng85EAuzL-88dK?usp=sharing)
 
 Support is available at: [https://groups.google.com/g/RIHVR](https://groups.google.com/g/RIHVR)
 
-# Minimum requirements
+# Minimum Requirements
 The code is CUDA-accelerated, so an NVIDIA GPU that is CUDA 12.9 compatible GPU with a compute capability of 7.0 or higher is required. 1 GB disk space, 4 GB RAM.
 
 **Dependencies for compilation:** Nvidia CUDA toolkit 12.9 or higher; OpenCV 4.0 or higher; C++ compiler with standard 17 support; Microsoft Visual Studio 2017 or higher; glib v2.35 or higher on linux systems; QT6.
@@ -41,10 +41,8 @@ Please find the installation instructions in [RIHVR Installation Instructions](R
 1) Download the Windows Installer from [GDrive - Windows Installer](https://drive.google.com/file/d/14RncCqclnwr_e4DRJBF1Em8ZHwzjZyd9/view?usp=sharing), or the Linux AppImage from [GDrive - Linux AppImage](https://drive.google.com/file/d/1a8kE3prEmbwEUNIzEmW3pWndnKVZ04V8/view?usp=sharing)
 2) Download the _Dandelions_ test case from [GDrive - Dandelion Data](https://drive.google.com/drive/folders/1OSCuNtha1z6xMWWJ4iuyWMh6UmukKK72?usp=sharing) or the _Rotating Rods_ from [GDrive - Rotating Rods](https://drive.google.com/drive/folders/1AGj9QrqHq4RU1cM-mm7gX3QU6MuZb0bb?usp=sharing).
 3) Use the following parameters to run the test cases.
-
-
 <div align="center">
-
+  
 | Parameter | Dandelions | Rotating Rods |
 | :--- | :--- | :--- |
 | `z0` | 0 µm | 2500 µm |
