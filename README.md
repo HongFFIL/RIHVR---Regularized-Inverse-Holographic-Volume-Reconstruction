@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/3e451510-6f5d-4315-9bbe-78de545df66e" width="100" height="100" alt="Logo">
+      <img src="https://github.com/user-attachments/assets/3e451510-6f5d-4315-9bbe-78de545df66e" width="200" height="200" alt="Logo">
     </td>
     <td>
       <h1>Regularized Inverse Holographic Volume Reconstruction (RIHVR) for Digital Inline Holography (DIH)</h1>
