@@ -81,12 +81,13 @@ Mallery, Kevin, and Jiarong Hong. "Regularized inverse holographic volume recons
 
 # License
 The code is made available under a GNU GPL v3 [LICENSE](LICENSE) 
-<div align="center">
-      <h1> Built with ❤️ by Flow Field Imaging Laboratory</h1>
-</div>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c57d2de7-4494-4630-9a9d-e60b832335b7" alt="Splash_3">
 </p>
+
+<div align="center">
+      <h1> Built with ❤️ by Flow Field Imaging Laboratory</h1>
+</div>
 
 
