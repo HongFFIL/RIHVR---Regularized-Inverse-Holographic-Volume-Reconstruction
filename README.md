@@ -52,7 +52,7 @@ Please find the installation instructions in [RIHVR Installation Instructions](R
 | `lambda` | 0.633 µm | 0.632 µm |
 | `0-pad` | 64 | 0 |
 | `Sparsity` | 0.001 | 0.15 |
-| `TV` | 0.01 | 0.01 |
+| `TV` | 0.01 | 0.1 |
 | `Number of FISTA Iterations` | 100 | 100 |
 | `Number of TV Iterations` | 5 | 5 |
 
