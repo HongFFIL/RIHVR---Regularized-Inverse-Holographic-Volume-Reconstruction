@@ -38,7 +38,7 @@ Digital inline holography (DIH) was invented by Hungarian physicist Dennis Gabor
 Please find the installation instructions in [RIHVR Installation Instructions](RIHVR_InstallationInstructions.pdf) 
 
 # Quick Start Guide
-1) Download the Windows Installer from [GDrive - Windows Installer](https://drive.google.com/file/d/14RncCqclnwr_e4DRJBF1Em8ZHwzjZyd9/view?usp=sharing), or the LinuxAppImage from [GDrive - Linux AppImage](https://drive.google.com/file/d/1a8kE3prEmbwEUNIzEmW3pWndnKVZ04V8/view?usp=sharing)
+1) Download the Windows Installer from [GDrive - Windows Installer](https://drive.google.com/file/d/14RncCqclnwr_e4DRJBF1Em8ZHwzjZyd9/view?usp=sharing), or the Linux AppImage from [GDrive - Linux AppImage](https://drive.google.com/file/d/1a8kE3prEmbwEUNIzEmW3pWndnKVZ04V8/view?usp=sharing)
 2) Download the _Dandelions_ test case from [GDrive - Dandelion Data](https://drive.google.com/drive/folders/1OSCuNtha1z6xMWWJ4iuyWMh6UmukKK72?usp=sharing) or the _Rotating Rods_ from [GDrive - Rotating Rods](https://drive.google.com/drive/folders/1AGj9QrqHq4RU1cM-mm7gX3QU6MuZb0bb?usp=sharing).
 3) Use the following parameters to run the test cases.
 
