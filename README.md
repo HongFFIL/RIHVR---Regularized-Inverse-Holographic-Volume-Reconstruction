@@ -44,14 +44,15 @@ Please find the installation instructions in [RIHVR Installation Instructions](R
 
 # Demonstration Datasets
 The following three test datasets are made available at https://doi.org/10.17605/OSF.IO/QWRDP
-1) Synthetically generated 3D-HIT to demonstrate 3D particle tracking velocimetry using DIH.
-<img width="4009" height="2053" alt="3DHIT_With3DTracks-1" src="https://github.com/user-attachments/assets/939242cd-0405-4d71-825e-7e449f4c16bd" />
 
-2) Dandelion to demonstrate the capability of the method to reconstruct full 3D objects.
+1) Dandelion to demonstrate the capability of the method to reconstruct full 3D objects.
 <img width="2235" height="1211" alt="DandelionResults_Test" src="https://github.com/user-attachments/assets/165a628d-6fe1-48c5-a2fa-d45b53a1c112" />
 
-3) Rotating rods to demonstrate the ability of the method to extract 3D orientation of the objects.
+2) Rotating rods to demonstrate the ability of the method to extract 3D orientation of the objects.
 <img width="2588" height="849" alt="TJunction_3DVol" src="https://github.com/user-attachments/assets/8d6f3aba-5714-4bf2-80fd-02ca04e37f83" />
+
+3) Synthetically generated 3D-HIT to demonstrate 3D particle tracking velocimetry using DIH.
+<img width="4009" height="2053" alt="3DHIT_With3DTracks-1" src="https://github.com/user-attachments/assets/939242cd-0405-4d71-825e-7e449f4c16bd" />
 
 # Papers
 The code is CUDA-accelerated, and further details regarding it can be found in the following papers:
