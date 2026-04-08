@@ -53,7 +53,7 @@ The following three test datasets are made available at https://doi.org/10.17605
 <img width="2588" height="849" alt="TJunction_3DVol" src="https://github.com/user-attachments/assets/8d6f3aba-5714-4bf2-80fd-02ca04e37f83" />
 
 3) Synthetically generated 3D-HIT to demonstrate 3D particle tracking velocimetry using DIH.
-<img width="4009" height="2053" alt="3DHIT_With3DTracks-1" src="https://github.com/user-attachments/assets/939242cd-0405-4d71-825e-7e449f4c16bd" />
+<img width="2535" height="967" alt="3DHIT_With3DTracks" src="https://github.com/user-attachments/assets/5a1f15f1-caf0-4f6d-a6b9-b2750c10c825" />
 
 # Papers
 The code is CUDA-accelerated, and further details regarding it can be found in the following papers:
