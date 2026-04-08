@@ -48,7 +48,7 @@ Please find the installation instructions in [RIHVR Installation Instructions](R
 | `z0` | 0 µm | 2500 µm |
 | `dz` | 8000 µm | 2 µm |
 | `dx` | 10.4 µm | 1.1 µm |
-| `Nz` | 10 | 1000 |
+| `Nz` | 100 | 1000 |
 | `lambda` | 0.633 µm | 0.632 µm |
 | `0-pad` | 64 | 0 |
 | `Sparsity` | 0.001 | 0.15 |
