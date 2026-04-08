@@ -24,38 +24,22 @@ Please find the installation instructions in [RIHVR Installation Instructions](R
 2) Download the _Dandelions_ test case from [GDrive - Dandelion Data](https://drive.google.com/drive/folders/1OSCuNtha1z6xMWWJ4iuyWMh6UmukKK72?usp=sharing) or the _Rotating Rods_ from [GDrive - Rotating Rods](https://drive.google.com/drive/folders/1AGj9QrqHq4RU1cM-mm7gX3QU6MuZb0bb?usp=sharing).
 3) Use the following parameters to run the test cases.
 
-**Dandelions**
+
 <div align="center">
 
-| Parameter | Value |
-| :--- | :--- |
-| `z0` | 0 µm |
-| `dz` | 8000 µm |
-| `dx` | 10.4 µm |
-| `Nz` | 10 |
-| `lambda` | 0.633 µm |
-| `0-pad` | 64 |
-| `Sparsity` | 0.001 |
-| `TV` | 0.1 |
-| `Number of FISTA Iterations` | 100 |
-| `Number of TV Iterations` | 5 |
-</div>
+| Parameter | Dandelions | Rotating Rods |
+| :--- | :--- | :--- |
+| `z0` | 0 µm | 2500 µm |
+| `dz` | 8000 µm | 2 µm |
+| `dx` | 10.4 µm | 1.1 µm |
+| `Nz` | 10 | 1000 |
+| `lambda` | 0.633 µm | 0.632 µm |
+| `0-pad` | 64 | 0 |
+| `Sparsity` | 0.001 | 0.15 |
+| `TV` | 0.1 | 0.07 |
+| `Number of FISTA Iterations` | 100 | 100 |
+| `Number of TV Iterations` | 5 | 5 |
 
-**Rotating Rods**
-<div align="center">
-  
-| Parameter | Value |
-| :--- | :--- |
-| `z0` | 2500 µm |
-| `dz` | 2 µm |
-| `dx` | 1.1 µm |
-| `Nz` | 1000 |
-| `lambda` | 0.632 µm |
-| `0-pad` | 0 |
-| `Sparsity` | 0.15 |
-| `TV` | 0.07 |
-| `Number of FISTA Iterations` | 100 |
-| `Number of TV Iterations` | 5 |
 </div>
 
 # Demonstration Datasets
